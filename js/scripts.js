@@ -10,13 +10,16 @@
 window.addEventListener('DOMContentLoaded', event => {
 
     // Activate Bootstrap scrollspy on the main nav element
-    const mainNav = document.body.querySelector('#mainNav');
-    if (mainNav) {
-        new bootstrap.ScrollSpy(document.body, {
-            target: '#mainNav',
-            offset: 74,
-        });
-    };
+
+    // // Activate Bootstrap scrollspy on the main nav element
+    // const mainNav = document.body.querySelector('Home\\/home.html');
+    // console.log(mainNav);
+    // if (mainNav) {
+    //     new bootstrap.ScrollSpy(document.body, {
+    //         target: 'Home/home.html',
+    //         offset: 74,
+    //     });
+    // };
 
     // Collapse responsive navbar when toggler is visible
     const navbarToggler = document.body.querySelector('.navbar-toggler');
@@ -32,3 +35,24 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+// $(document).ready(function(){
+//     $("#changeHTML").load("Home/home.html", function () {
+//         //페이지 별로 다른 메뉴 css 적용도 가능
+//         document.getElementById("changeHTML").classList.add("show");
+//     });
+// })
+
+$(document).ready(function(){
+    $("#changeHTML").load("Home/home.html");
+})
+
+$(home).click(function(){
+    $("#changeHTML").load("Home/home.html");
+})
+$(list).click(function(){
+    $("#changeHTML").load("List/list.html");
+})
+$(schedule).click(function(){
+    $("#changeHTML").load("Schedule/schedule.html");
+})
