@@ -1,10 +1,69 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
 <body>
+    <!-- Page Header-->
+    <header class="pageHead" style="background-image: url('assets/img/presentation.jpg')">
+        <div class="container position-relative px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    <div class="site-heading">
+                        <h1>온라인 발표</h1>
+                        <span class="subheading">
+                            on June 29, 2021
+                        </span>                  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container pt-5 mt-5">
+        
+    </div> 
 
+    <div class="display-6 text-center mb-5">
+        <span>제 12회 Software Festival 행사는</span>
+        <span class="text-primary">온라인으로</span>
+        <span>진행됩니다</span>
+        <br>
+        <a href="https://gachon.webex.com/meet/swdm" target="_blank">
+            <h3>Webex Link
+            <img src="assets/img/webex.png" class="img-fluid" alt="webex" size></h3>
+        </a>
+    </div>
+
+    <!-- Main Content-->
+    <div class="container px-4 px-lg-5">
+        <h2 class="display-4 text-center text-uppercase text-secondary mb-5">TIMETABLE</h2>
+        <div class="row justify-content-center">
+            <div class="col">
+                <!-- Post preview-->
+                <h4>교과 과정 혁신 위원회<h4>
+                <hr class="my-4 "/>
+                <div class="row">
+                    <div class="col-md-4"><span class="time">13:00 ~ 14:00<span></span></div>
+                    <div class="col-md-8"><span class="participant">사회자 : 정용주 교수님</span>
+                    <span class="participant">참여자 : 한명묵, 노웅기, 정성철 교수님</span></div>
+                </div>
+                <hr class="my-4"/>  
+            </div>
+            <div class="col">
+                <!-- Post preview-->
+                <h4>개회 및 환영사<h4> 
+                <hr class="my-4 "/>
+                <div class="row">
+                    <div class="col-md-4"><span class="time">13:00 ~ 14:00<span></span></div>
+                    <div class="col-md-8"><span class="participant">사회자 : 정용주 교수님</span>                </div>
+            </div>
+            <hr class="my-4"/> 
+        </div>
+    </div>
+    <script>
+        var triggerTabList = [].slice.call(document.querySelectorAll('#myTab a'));
+        triggerTabList.forEach(function (triggerEl) {
+            var tabTrigger = new bootstrap.Tab(triggerEl)
+    
+            triggerEl.addEventListener('click', function (event) {
+                event.preventDefault()
+                tabTrigger.show()
+            })
+        })
+    </script>  
 </body>
-</html>

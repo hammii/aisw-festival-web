@@ -1,10 +1,11 @@
-<div class="container">
+<body>
+<div class="container pt-5 mt-5">
     <div class="row justify-content-center">
         <div class="col-10">
             <div class="card m-3">
                 <div class="flex-container">
                     <div class="card-body float-start pe-0">
-                        <img src="img.png" alt="good" width="20" height="20">
+                        <img src="List/img.png" alt="good" width="20" height="20">
                     </div>
                     <div class="card-body float-start">
                         포스터 작품 감상 후 3개의 우수 포스터를 선택해 주세요.(Google 계정 필요)
@@ -15,22 +16,31 @@
                     </div>
                 </div>
 
-                <ul class="nav nav-pills flex-column flex-sm-row p-5 pb-3">
-                    <li class="flex-sm-fill text-sm-center nav-item">
-                        <a class="flex-sm-fill text-sm-center nav-link active" data-toggle="tab" href="#robot">로봇공학</a>
+                <ul class="nav nav-pills flex-column flex-sm-row p-5 pt-3 pb-3" id="pills-tab" role="tablist">
+                    <li class="flex-sm-fill text-sm-center nav-item" role="presentation">
+                        <button class="nav-link active w-100" id="pills-home-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                aria-selected="true">로봇공학
+                        </button>
                     </li>
-                    <li class="flex-sm-fill text-sm-center nav-item">
-                        <a class="flex-sm-fill text-sm-center nav-link" data-toggle="tab" href="#mobile">모바일 프로그래밍</a>
+
+                    <li class="flex-sm-fill text-sm-center nav-item" role="presentation">
+                        <button class="nav-link w-100" id="pills-profile-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                                aria-selected="false">모바일 프로그래밍
+                        </button>
                     </li>
-                    <li class="flex-sm-fill text-sm-center nav-item">
-                        <a class="nav-link text-sm-center nav-link" data-toggle="tab" href="#gproject">졸업작품</a>
+                    <li class="flex-sm-fill text-sm-center nav-item" role="presentation">
+                        <button class="nav-link w-100" id="pills-contact-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                                aria-selected="false">졸업작품
+                        </button>
                     </li>
                 </ul>
-
             </div>
 
-            <div class="tab-content">
-                <div class="tab-pane fade show active" id="robot">
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                     <div class="card m-3">
                         <div class="flex-container">
                             <div class="card-body">
@@ -44,8 +54,7 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="tab-pane fade show" id="mobile">
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
                     <div class="card m-3">
                         <div class="flex-container">
                             <div class="card-body">
@@ -59,8 +68,7 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="tab-pane fade show" id="gproject">
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
                     <div class="card m-3">
                         <div class="flex-container">
                             <div class="card-body">
@@ -75,6 +83,19 @@
                     </div>
                 </div>
             </div>
+
+            <script>
+                var triggerTabList = [].slice.call(document.querySelectorAll('#myTab a'));
+                triggerTabList.forEach(function (triggerEl) {
+                    var tabTrigger = new bootstrap.Tab(triggerEl)
+
+                    triggerEl.addEventListener('click', function (event) {
+                        event.preventDefault()
+                        tabTrigger.show()
+                    })
+                })
+            </script>
         </div>
     </div>
 </div>
+</body>
