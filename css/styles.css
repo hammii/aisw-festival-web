@@ -63,15 +63,12 @@ body {
 
 hr {
   margin: 1rem 0;
-  color: inherit;
+  color: #202ffffd;
   background-color: currentColor;
-  border: 0;
-  opacity: 0.25;
+  border: solid;
+  opacity: .8;
 }
 
-hr:not([size]) {
-  height: 1px;
-}
 
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
@@ -6904,8 +6901,8 @@ textarea.form-control-lg {
 }
 
 .my-4 {
-  margin-top: 1.5rem !important;
-  margin-bottom: 1.5rem !important;
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
 }
 
 .my-5 {
@@ -7338,7 +7335,7 @@ textarea.form-control-lg {
 }
 
 .text-secondary {
-  color: #9f1ae2 !important;
+  color: #383838 !important;
 }
 
 .text-success {
@@ -11168,4 +11165,132 @@ footer a:hover, footer a:active, footer a:focus {
   .masthead .masthead-device-mockup .device-wrapper {
     max-width: 17rem;
   }
+}
+
+header.pageHead {
+  position: relative;
+  margin-bottom: 3rem;
+  padding-top: calc(8rem + 57px);
+  padding-bottom: 8rem;
+  background: no-repeat center center;
+  background-color: #6c757d;
+  background-size: cover;
+  background-attachment: scroll;
+}
+header.pageHead:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #515355;
+  opacity: 0.5;
+}
+header.pageHead .page-heading,
+header.pageHead .post-heading,
+header.pageHead .site-heading {
+  color: #fff;
+}
+header.pageHead .page-heading,
+header.pageHead .site-heading {
+  text-align: center;
+}
+header.pageHead .page-heading h1, header.pageHead .page-heading .h1,
+header.pageHead .site-heading h1,
+header.pageHead .site-heading .h1 {
+  font-size: 3rem;
+}
+header.pageHead .page-heading .subheading,
+header.pageHead .site-heading .subheading {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.1;
+  display: block;
+  margin-top: 0.625rem;
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+header.pageHead .post-heading h1, header.pageHead .post-heading .h1 {
+  font-size: 2.25rem;
+}
+header.pageHead .post-heading .meta,
+header.pageHead .post-heading .subheading {
+  line-height: 1.1;
+  display: block;
+}
+header.pageHead .post-heading .subheading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0.75rem 0 2rem;
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+header.pageHead .post-heading .meta {
+  font-size: 1.25rem;
+  font-weight: 300;
+  font-style: italic;
+  font-family: "Lora", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+header.pageHead .post-heading .meta a {
+  color: #fff;
+}
+
+@media (min-width: 992px) {
+  header.pageHead {
+    padding-top: 9.5rem;
+    padding-bottom: 8.5rem;
+  }
+  header.pageHead .page-heading h1, header.pageHead .page-heading .h1,
+header.pageHead .site-heading h1,
+header.pageHead .site-heading .h1 {
+    font-size: 5rem;
+  }
+  header.pageHead .post-heading h1, header.pageHead .post-heading .h1 {
+    font-size: 3.5rem;
+  }
+  header.pageHead .post-heading .subheading {
+    font-size: 1.875rem;
+  }
+}
+.img-fluid{
+  max-width: 2rem;
+}
+
+.colgroup {
+  clear: both;
+  zoom: 1;
+}
+* {
+  box-sizing: border-box;
+}
+div {
+  display: block;
+}
+body, input, button, select, textarea {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5;
+  word-wrap: break-word;
+  word-break: keep-all;
+}
+.colgroup:before, .colgroup:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.colgroup:before, .colgroup:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.time{
+  padding: 1rem;
+  flex-grow: 0;
+  width: 80px;
+  line-height: 1.4;
+}
+.participant{
+  display: block;
+  flex-grow: 0;
+  font-size:1.3rem;
 }
