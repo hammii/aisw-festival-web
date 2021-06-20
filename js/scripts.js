@@ -9,8 +9,6 @@
 
 window.addEventListener('DOMContentLoaded', event => {
 
-    // Activate Bootstrap scrollspy on the main nav element
-
     // // Activate Bootstrap scrollspy on the main nav element
     // const mainNav = document.body.querySelector('Home\\/home.html');
     // console.log(mainNav);
@@ -55,4 +53,7 @@ $(list).click(function(){
 })
 $(schedule).click(function(){
     $("#changeHTML").load("Schedule/schedule.html");
+})
+&(test).click(function () {
+    $(document).load("List/detail2.html");
 })

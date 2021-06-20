@@ -1,0 +1,58 @@
+<!-- Product section-->
+<section class="py-5">
+    <div class="container px-4 px-lg-5 my-5">
+        <div class="row gx-4 gx-lg-5 align-items-center">
+            <div class="col-md-6">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/GyRSM9euBu8" frameborder="0" allowfullscreen></iframe>
+                </div>
+
+            </div>
+            <div class="col-md-6">
+                <div class="small mb-1">과목명</div>
+                <h1 class="display-5 fw-bolder">팀명</h1>
+                <div class="fs-5 mb-5">
+                    <span>팀원 팀원 팀원 </span>
+                </div>
+                <p class="lead1">깃허브 주소</p>
+                <p class="lead2">궁시렁궁시렁</p>
+
+                <div id="textArea"></div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<script type="text/javascript">
+    $(function() {
+        var fileName = "assets/test.csv";
+
+        $.ajax({
+            url:fileName,
+            dataType:'text',
+            success: function(data) {
+                var allRow = data;
+                var textLine = "";
+                var wordCnt = 0;
+                while(wordCnt !== allRow.length){
+                    if(allRow[wordCnt] == )
+                }
+                for(var singleRow = 0; singleRow < allRow.length; singleRow++) {
+                    var collapse = allRow[singleRow].split('\\n');
+                    console.log(collapse);
+
+                    // for(var count = 0; count < allRow.length; count++) {
+                    //     if(collapse[count] === " ")
+                    //         console.log("ㅎㅇ");
+                    //
+                    //     textLine += collapse[count];
+                    //
+                    // }
+                }
+
+                $("#textArea").append(textLine);
+            }
+        });
+    });
+</script>
