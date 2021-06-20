@@ -1,4 +1,4 @@
-<body>
+<body onload="loaded();">
 <div class="container pt-5 mt-5">
     <div class="row justify-content-center">
         <div class="col-10">
@@ -41,60 +41,100 @@
 
             <div class="tab-content" id="pills-tabContent">
                 <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                    <div class="card m-3">
+                    <div class="card p-3 m-3">
                         <div class="flex-container">
                             <div class="card-body">
-                                <h2>
+                                <div>
+                                    <button type="button" class="btn btn-primary btn-block mb-3 poster" disabled>Poster
+                                        ROBOT
+                                    </button>
+                                </div>
+                                <h2 class="mb-4">
                                     로봇공학
                                 </h2>
-                            </div>
-                            <div class="card-body">
-                                포스터 작품 감상 후 3개의 우수 포스터를 선택해 주세요.(Google 계정 필요)
+                                <hr/>
+
+                                <div class="row">
+                                    <div class="col-md-2 align-self-center">
+                                        <button type="button"
+                                                class="btn btn-primary btn-block btn-sm justify-content-center">ROBOT-1
+                                        </button>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <a href="#" class="text-primary text-decoration-none mb-0">프로젝트 명</a>
+                                        <p class="mb-0">팀원 명</p>
+                                    </div>
+                                </div>
+                                <hr/>
+
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                    <div class="card m-3">
+                    <div class="card p-3 m-3">
                         <div class="flex-container">
                             <div class="card-body">
-                                <h2>
+                                <div>
+                                    <button type="button" class="btn btn-primary btn-block mb-3 poster" disabled>Poster
+                                        MOBILE
+                                    </button>
+                                </div>
+                                <h2 class="mb-4">
                                     모바일 프로그래밍
                                 </h2>
-                            </div>
-                            <div class="card-body">
-                                포스터 작품 감상 후 3개의 우수 포스터를 선택해 주세요.(Google 계정 필요)
+                                <hr/>
+
+                                <div class="row">
+                                    <div class="col-md-2 align-self-center">
+                                        <button type="button"
+                                                class="btn btn-primary btn-block btn-sm justify-content-center">MOBILE-1
+                                        </button>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <a href="#" class="text-primary text-decoration-none mb-0">프로젝트 명</a>
+                                        <p class="mb-0">팀원 명</p>
+                                    </div>
+                                </div>
+                                <hr/>
+
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-                    <div class="card m-3">
+                    <div class="card p-3 m-3">
                         <div class="flex-container">
                             <div class="card-body">
-                                <h2>
+                                <div>
+                                    <button type="button" class="btn btn-primary btn-block mb-3 poster" disabled>Poster
+                                        GPROJECT
+                                    </button>
+                                </div>
+                                <h2 class="mb-4">
                                     졸업작품
                                 </h2>
-                            </div>
-                            <div class="card-body">
-                                포스터 작품 감상 후 3개의 우수 포스터를 선택해 주세요.(Google 계정 필요)
+                                <hr/>
+
+                                <div class="row">
+                                    <div class="col-md-2 align-self-center">
+                                        <button type="button"
+                                                class="btn btn-primary btn-block btn-sm justify-content-center">GPROJECT-1
+                                        </button>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <a href="#" class="text-primary text-decoration-none mb-0">프로젝트 명</a>
+                                        <p class="mb-0">팀원 명</p>
+                                    </div>
+                                </div>
+                                <hr/>
+
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
-
-            <script>
-                var triggerTabList = [].slice.call(document.querySelectorAll('#myTab a'));
-                triggerTabList.forEach(function (triggerEl) {
-                    var tabTrigger = new bootstrap.Tab(triggerEl)
-
-                    triggerEl.addEventListener('click', function (event) {
-                        event.preventDefault()
-                        tabTrigger.show()
-                    })
-                })
-            </script>
         </div>
     </div>
 </div>
