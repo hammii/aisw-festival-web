@@ -54,6 +54,3 @@ $(list).click(function(){
 $(schedule).click(function(){
     $("#changeHTML").load("Schedule/schedule.html");
 })
-&(test).click(function () {
-    $(document).load("List/detail2.html");
-})
