@@ -41,16 +41,18 @@ window.addEventListener('DOMContentLoaded', event => {
 //     });
 // })
 
-$(document).ready(function(){
-    $("#changeHTML").load("Home/home.html");
+// $(document).ready(function(){
+//     $("#changeHTML").load("List/list.html");
+// })
+
+$(list).click(function(){
+    location.href="../List/list.html?type=list";
 })
 
-$(home).click(function(){
-    $("#changeHTML").load("Home/home.html");
-})
-$(list).click(function(){
-    $("#changeHTML").load("List/list.html");
-})
 $(schedule).click(function(){
-    $("#changeHTML").load("Schedule/schedule.html");
+    location.href="../Schedule/schedule.html?type=schedule";
+})
+
+$(opensource).click(function (){
+    $("#changeHTML").load("List/showDetails.html");
 })
