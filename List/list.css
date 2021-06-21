@@ -1,5 +1,5 @@
 .poster {
-    width: 100px;
-    font-size: x-small;
-    padding: 0 0;
+    width: 100px !important;
+    font-size: x-small !important;
+    padding: 0 0 !important;
 }
