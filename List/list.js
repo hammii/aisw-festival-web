@@ -10,7 +10,7 @@ triggerTabList.forEach(function (triggerEl) {
 
 function loaded() {
     var ul_list; //ul_list선언
-    var fileName = "../assets/test.csv";
+    var fileName = "../assets/sheet.csv";
 
     $.ajax({
         url: fileName,
@@ -35,16 +35,10 @@ function loaded() {
 
                 if (textArr[num][0] !== undefined && num > 0) {
                     var subject = "";
-                    var project_name = textArr[num][1];
-                    var members_name = textArr[num][2];
+                    var project_name = textArr[num][2];
+                    var members_name = textArr[num][3];
 
                     switch (textArr[num][0]) {
-                        case "로봇공학":
-                            ul_list = $("#robot-data");
-                            subject = "ROBOT";
-                            robot_cnt += 1;
-                            cnt = robot_cnt;
-                            break;
                         case "모바일프로그래밍":
                             ul_list = $("#mobile-data");
                             subject = "MOBILE";
@@ -64,8 +58,9 @@ function loaded() {
                     ul_list.append(`<div class="row" id="data-group">
                                         <div class="col-md-2 align-self-center">
                                             <button type="button"
-                                                    class="btn btn-primary btn-block btn-sm justify-content-center"
-                                                    id="subject-name">${subject}-${cnt}
+                                                    class="btn btn-primary btn-block btn-sm justify-content-center subject-name"
+                                                    id = "${project_name}"
+                                                    onclick="btnClickHandler(this)">${subject}-${cnt}
                                             </button>
                                         </div>
                                         <div class="col-md-10">
@@ -118,8 +113,8 @@ function clickHandler(ths) {
     var text = $(ths).text();
     location.href = "showDetails.html?name=" + text;
 }
-$(document).on("click", "#subject-name", function(){
-    var children = $("#data-group").children()[1];
-    var text = $(children).children('a').text();
+function btnClickHandler(ths){
+    var text = $(ths)[0].id;
+    console.log(text);
     location.href = "showDetails.html?name=" + text;
-});
+}
