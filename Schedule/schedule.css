@@ -10690,7 +10690,7 @@ footer {
   color: #0085A1;
 }
 .post-preview > a > .post-title {
-  font-size: 1.875rem;
+  font-size: 1.0rem;
   margin-top: 1.875rem;
   margin-bottom: 0.625rem;
 }
@@ -10709,7 +10709,7 @@ footer {
 }
 @media (min-width: 992px) {
   .post-preview > a > .post-title {
-    font-size: 2.25rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -10718,4 +10718,5 @@ footer {
     padding-bottom: 2rem;
     border-color: #03b8c53d !important;
     border-width: 0.2rem !important;
+    margin-bottom: 2rem;
 }
