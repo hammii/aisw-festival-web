@@ -58,7 +58,7 @@ function loaded() {
                     ul_list.append(`<div class="row" id="data-group">
                                         <div class="col-md-2 align-self-center">
                                             <button type="button"
-                                                    class="btn btn-primary btn-block btn-sm justify-content-center subject-name"
+                                                    class="btn btn-primary btn-block btn-sm justify-content-center"
                                                     id = "${email}"
                                                     onclick="btnClickHandler(this)">${subject}-${cnt}
                                             </button>
