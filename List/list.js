@@ -9,34 +9,34 @@ triggerTabList.forEach(function (triggerEl) {
 })
 
 function loaded() {
-    var ul_list; //ul_list선언
-    var fileName = "../assets/sheet.csv";
+    let ul_list; //ul_list선언
+    const fileName = "../assets/sheet.csv";
 
     $.ajax({
         url: fileName,
         dataType: 'text',
         success: function (data) {
-            var allRow = data;
-            var allData = "";
+            const allRow = data;
+            let allData = "";
 
             for (var singleRow = 0; singleRow < allRow.length; singleRow++) {
                 allData += allRow[singleRow];
             }
 
-            var rowArr = allData.split('\n');
-            var textArr = new Array(rowArr.length);
-            var robot_cnt = 0;
-            var mobile_cnt = 0;
-            var gproject_cnt = 0;
-            var cnt;
+            const rowArr = allData.split('\n');
+            const textArr = new Array(rowArr.length);
+            let mobile_cnt = 0;
+            let gproject_cnt = 0;
+            let cnt;
 
             for (var num = 0; num < rowArr.length; num++) {
                 textArr[num] = CSVtoArray(rowArr[num]);
 
                 if (textArr[num][0] !== undefined && num > 0) {
-                    var subject = "";
-                    var project_name = textArr[num][2];
-                    var members_name = textArr[num][3];
+                    let subject = "";
+                    const email = textArr[num][1];
+                    const project_name = textArr[num][2];
+                    const members_name = textArr[num][3];
 
                     switch (textArr[num][0]) {
                         case "모바일프로그래밍":
@@ -59,12 +59,14 @@ function loaded() {
                                         <div class="col-md-2 align-self-center">
                                             <button type="button"
                                                     class="btn btn-primary btn-block btn-sm justify-content-center subject-name"
-                                                    id = "${project_name}"
+                                                    id = "${email}"
                                                     onclick="btnClickHandler(this)">${subject}-${cnt}
                                             </button>
                                         </div>
                                         <div class="col-md-10">
-                                            <a href="#" class="text-primary text-decoration-none mb-0" onclick="clickHandler(this)">${project_name}</a>
+                                            <a href="#" class="text-primary text-decoration-none mb-0"
+                                            id = "${email}"
+                                            onclick="clickHandler(this)">${project_name}</a>
                                             <p class="mb-0 small">${members_name}</p>
                                         </div>
                                     </div>
@@ -110,11 +112,10 @@ $(schedule).click(function () {
 
 // project 클릭 리스너
 function clickHandler(ths) {
-    var text = $(ths).text();
-    location.href = "showDetails.html?name=" + text;
+    const text = $(ths)[0].id;
+    location.href = "showDetails.html?email=" + text;
 }
-function btnClickHandler(ths){
-    var text = $(ths)[0].id;
-    console.log(text);
-    location.href = "showDetails.html?name=" + text;
+function btnClickHandler(ths) {
+    const text = $(ths)[0].id;
+    location.href = "showDetails.html?email=" + text;
 }
