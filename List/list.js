@@ -44,33 +44,65 @@ function loaded() {
                             subject = "MOBILE";
                             mobile_cnt += 1;
                             cnt = mobile_cnt;
-                            break;
-                        case "졸업작품3":
-                            ul_list = $("#gproject-data");
-                            subject = "GPROJECT";
-                            gproject_cnt += 1;
-                            cnt = gproject_cnt;
-                            break;
-                        default:
-                            break;
-                    }
-
-                    ul_list.append(`<div class="row" id="data-group">
+                            ul_list.append(`<div class="row" id="data-group">
                                         <div class="col-md-2 align-self-center">
                                             <button type="button"
-                                                    class="btn btn-primary btn-block btn-sm justify-content-center"
+                                                    class="btn btn-success btn-block btn-sm justify-content-center"
                                                     id = "${email}"
                                                     onclick="btnClickHandler(this)">${subject}-${cnt}
                                             </button>
                                         </div>
                                         <div class="col-md-10">
-                                            <a href="#" class="text-primary text-decoration-none mb-0"
+                                            <a href="#" class="text-success text-decoration-none mb-0"
                                             id = "${email}"
                                             onclick="clickHandler(this)">${project_name}</a>
                                             <p class="mb-0 small">${members_name}</p>
                                         </div>
                                     </div>
                                     <hr/>`)
+                            break;
+                        case "졸업작품3":
+                            ul_list = $("#gproject-data");
+                            subject = "GPROJECT";
+                            gproject_cnt += 1;
+                            cnt = gproject_cnt;
+                            ul_list.append(`<div class="row" id="data-group">
+                                        <div class="col-md-2 align-self-center">
+                                            <button type="button"
+                                                    class="btn btn-success btn-block btn-sm justify-content-center"
+                                                    id = "${email}"
+                                                    onclick="btnClickHandler(this)">${subject}-${cnt}
+                                            </button>
+                                        </div>
+                                        <div class="col-md-10">
+                                            <a href="#" class="text-success text-decoration-none mb-0"
+                                            id = "${email}"
+                                            onclick="clickHandler(this)">${project_name}</a>
+                                            <p class="mb-0 small">${members_name}</p>
+                                        </div>
+                                    </div>
+                                    <hr/>`)
+                            break;
+                        default:
+                            break;
+                    }
+
+                    // ul_list.append(`<div class="row" id="data-group">
+                    //                     <div class="col-md-2 align-self-center">
+                    //                         <button type="button"
+                    //                                 class="btn btn-primary btn-block btn-sm justify-content-center"
+                    //                                 id = "${email}"
+                    //                                 onclick="btnClickHandler(this)">${subject}-${cnt}
+                    //                         </button>
+                    //                     </div>
+                    //                     <div class="col-md-10">
+                    //                         <a href="#" class="text-primary text-decoration-none mb-0"
+                    //                         id = "${email}"
+                    //                         onclick="clickHandler(this)">${project_name}</a>
+                    //                         <p class="mb-0 small">${members_name}</p>
+                    //                     </div>
+                    //                 </div>
+                    //                 <hr/>`)
                 }
             }
         }
@@ -96,9 +128,6 @@ function CSVtoArray(text) {
     if (/,\s*$/.test(text)) a.push('');
     return a;
 }
-$(home).click(function (){
-    location.href="../index.html";
-})
 
 $(home).click(function () {
     location.href = "../index.html";

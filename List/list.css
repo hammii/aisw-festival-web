@@ -7,3 +7,45 @@
 .cursor-pointer {
     cursor: pointer;
 }
+
+img {
+    margin-bottom: -10px;
+}
+
+.nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #495057;
+    text-decoration: none;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+@media (prefers-reduced-motion: reduce) {
+    .nav-link {
+        transition: none;
+    }
+}
+.nav-link#pills-profile-tab:hover, .nav-link#pills-profile-tab:focus {
+    color: #000000;
+}
+.nav-link#pills-contact-tab:hover, .nav-link#pills-contact-tab:focus {
+    color: #000000;
+}
+.nav-tabs .nav-link.active#pills-profile-tab, .nav-tabs .show > .nav-link#pills-profile-tab {
+    color: #198754;
+    background-color: #ffffff;
+}
+.nav-tabs .nav-link.active#pills-contact-tab, .nav-tabs .show > .nav-link#pills-contact-tab {
+    color: #198754;
+    background-color: #ffffff;
+}
+.nav-link.disabled {
+    color: #6c757d;
+    pointer-events: none;
+    cursor: default;
+}
+#mainNav .navbar-nav .nav-item .nav-link:hover {
+    color: #198754;
+}
+#mainNav .navbar-nav .nav-item .nav-link.active {
+    color: #198754;
+}
