@@ -20,7 +20,6 @@ $(schedule).click(function(){
 //     location.href="showDetails.html?type=detail";
 // })
 
-
 // 나중에 가치확산 창 생기면 추가
 // $(value).click(function (){
 //     location.href="showDetails.html?type=detail";

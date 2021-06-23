@@ -126,8 +126,8 @@ window.addEventListener('DOMContentLoaded', event => {
 
 });
 
-$(home).click(function (){
-    location.href="../index.html";
+$(home).click(function () {
+    location.href = "../index.html";
 })
 
 $(list).click(function(){
