@@ -112,10 +112,13 @@ $(schedule).click(function () {
     location.href = "../Schedule/schedule.html?type=schedule";
 })
 
-// 나중에 오픈소스 창 생기면 추가
-// $(opensource).click(function (){
-//     location.href="showDetails.html?type=detail";
-// })
+$(opensource).click(function (){
+    location.href="../Opensource/openSource.html?type=opensource";
+})
+
+$(value).click(function (){
+    location.href="../ValueDiffusion/valueDiffusion.html?type=value";
+})
 
 // project 클릭 리스너
 function clickHandler(ths) {

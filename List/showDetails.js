@@ -138,13 +138,10 @@ $(schedule).click(function(){
     location.href="../Schedule/schedule.html?type=schedule";
 })
 
-// 나중에 오픈소스 창 생기면 추가
-// $(opensource).click(function (){
-//     location.href="showDetails.html?type=detail";
-// })
+$(opensource).click(function (){
+    location.href="../Opensource/openSource.html?type=opensource";
+})
 
-
-// 나중에 가치확산 창 생기면 추가
-// $(value).click(function (){
-//     location.href="showDetails.html?type=detail";
-// })
+$(value).click(function (){
+    location.href="../ValueDiffusion/valueDiffusion.html?type=value";
+})
