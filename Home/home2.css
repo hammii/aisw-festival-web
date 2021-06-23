@@ -7390,7 +7390,7 @@ textarea.form-control-lg {
 }
 
 .bg-primary {
-    background-color: #96aaf3 !important;
+    background-color: #fff !important;
 }
 
 .bg-secondary {
@@ -10991,7 +10991,8 @@ html {
     font-size: 1.25rem;
 }
 .masthead .masthead-avatar {
-    width: 15rem;
+    max-width: 100%;
+    height: auto;
 }
 
 @media (min-width: 992px) {
