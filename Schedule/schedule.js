@@ -1,9 +1,17 @@
-$(list).click(function(){
-    location.href="../List/list.html?type=list";
+$(home).click(function (){
+    location.href="../index.html";
 })
 
-$(schedule).click(function(){
-    location.href="../Schedule/schedule.html?type=schedule";
+$(home).click(function () {
+    location.href = "../index.html";
+})
+
+$(list).click(function () {
+    location.href = "../List/list.html?type=list";
+})
+
+$(schedule).click(function () {
+    location.href = "../Schedule/schedule.html?type=schedule";
 })
 
 // 나중에 오픈소스 창 생기면 추가
