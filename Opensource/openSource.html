@@ -19,16 +19,16 @@
           rel="stylesheet"/>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-
-    <link href="openSource.css" rel="stylesheet"/>
     <link href="../css/styles.css" rel="stylesheet"/>
+    <link href="openSource.css" rel="stylesheet"/>
 </head>
 <body>
 <!-- Navigation-->
 <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
     <div class="container px-5">
 
-        <a class="navbar-brand"><img src="../assets/img/ai_sw_logo.png" alt="..." width="180" height="50" id="home"/></a>
+        <a class="navbar-brand cursor-pointer"><img src="../assets/img/ai_sw_logo.png" alt="..." width="180" height="50"
+                                                    id="home"/></a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,20 +37,13 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
-                <li class="nav-item"><a class="nav-link me-lg-3" id="schedule" >SCHEDULE</a></li>
-                <li class="nav-item"><a class="nav-link me-lg-3" id="list" >PROJECT LIST</a></li>
-                <li class="nav-item"><a class="nav-link me-lg-3" id="opensource" >OPEN SOURCE</a></li>
-                <li class="nav-item"><a class="nav-link me-lg-3" id="value" >VALUE DIFFUSION</a></li>
-
+                <li class="nav-item"><a class="nav-link me-lg-3 cursor-pointer" id="schedule">실시간 발표 세션</a></li>
+                <li class="nav-item"><a class="nav-link me-lg-3 cursor-pointer" id="list">포스터 세션</a></li>
+                <li class="nav-item"><a class="nav-link me-lg-3 cursor-pointer" id="opensource">오픈 소스 세션</a></li>
+                <li class="nav-item"><a class="nav-link me-lg-3 cursor-pointer" id="value">가치 확산 세션</a></li>
             </ul>
-            <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" data-bs-toggle="modal"
-                    data-bs-target="#feedbackModal">
-                        <span class="d-flex align-items-center">
-                            <i class="bi-chat-text-fill me-2"></i>
-                            <span class="small">Go to vote</span>
-                        </span>
-            </button>
         </div>
+
     </div>
 </nav>
 <section class="py-5">
