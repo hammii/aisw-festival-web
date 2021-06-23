@@ -51,7 +51,7 @@
 
 body {
   margin: 0;
-  font-family: "Lora", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: var(--bs-font-sans-serif);
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -10650,9 +10650,10 @@ blockquote {
 }
 #mainNav .navbar-nav .nav-item .nav-link {
   color: #212529;
+  font-size: 16px;
 }
 #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #6c757d;
+  color: #232fcc;
 }
 #mainNav .navbar-nav .nav-item .nav-link.active {
   color: #2937f0;
@@ -10721,4 +10722,8 @@ footer {
 
 .post-time{
     color:#063275;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
