@@ -45,7 +45,7 @@ function loaded() {
                             mobile_cnt += 1;
                             cnt = mobile_cnt;
                             break;
-                        case "졸업작품":
+                        case "졸업작품3":
                             ul_list = $("#gproject-data");
                             subject = "GPROJECT";
                             gproject_cnt += 1;
@@ -96,6 +96,9 @@ function CSVtoArray(text) {
     if (/,\s*$/.test(text)) a.push('');
     return a;
 }
+$(home).click(function (){
+    location.href="../index.html";
+})
 
 $(list).click(function () {
     location.href = "../List/list.html?type=list";
