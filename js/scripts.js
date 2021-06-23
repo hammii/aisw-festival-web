@@ -16,7 +16,7 @@ $(schedule).click(function(){
 })
 
 $(opensource).click(function (){
-    location.href="OpenSource.html?type=opensource";
+    location.href="OpenSource/openSource.html?type=opensource";
 })
 
 $(value).click(function (){
