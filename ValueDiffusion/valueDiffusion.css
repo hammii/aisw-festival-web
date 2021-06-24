@@ -4226,6 +4226,7 @@ textarea.form-control-lg {
 
 .tab-content > .tab-pane {
     display: none;
+    width: 100%;
 }
 
 .tab-content > .active {
