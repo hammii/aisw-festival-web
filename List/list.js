@@ -45,7 +45,7 @@ function loaded() {
                             mobile_cnt += 1;
                             cnt = mobile_cnt;
                             ul_list.append(`<div class="row m-2" id="data-group">
-                                        <div class="col-md-2  align-self-center">
+                                        <div class="col-md-2 col-sm-auto  align-self-center">
                                             <button type="button"
                                                     class="btn btn-success btn-block btn-sm justify-content-center"
                                                     id = "${email}"
@@ -53,10 +53,10 @@ function loaded() {
                                             </button>
                                         </div>
                                         <div class="col-md-10 mt-2 mb-2">
-                                            <a href="#" class="text-success text-decoration-none mb-0"
+                                            <a href="#" class="text-success text-decoration-none h4"
                                             id = "${email}"
                                             onclick="clickHandler(this)">${project_name}</a>
-                                            <p class="mb-0 small">${members_name}</p>
+                                            <p class="mt-1 mb-0 small">${members_name}</p>
                                         </div>
                                     </div>
                                     <hr/>`)
@@ -67,7 +67,7 @@ function loaded() {
                             gproject_cnt += 1;
                             cnt = gproject_cnt;
                             ul_list.append(`<div class="row m-2" id="data-group">
-                                        <div class="col-md-3 align-self-center">
+                                        <div class="col-md-2 col-sm-auto col- align-self-center">
                                             <button type="button"
                                                     class="btn btn-success btn-block btn-sm justify-content-center"
                                                     id = "${email}"
@@ -75,10 +75,10 @@ function loaded() {
                                             </button>
                                         </div>
                                         <div class="col-md-9 mt-2 mb-2">
-                                            <a href="#" class="text-success text-decoration-none mb-0"
+                                            <a href="#" class="text-success text-decoration-none h4"
                                             id = "${email}"
                                             onclick="clickHandler(this)">${project_name}</a>
-                                            <p class="mb-0 small">${members_name}</p>
+                                            <p class="mt-1 mb-0 small">${members_name}</p>
                                         </div>
                                     </div>
                                     <hr/>`)
