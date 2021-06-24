@@ -568,6 +568,7 @@ progress {
 .img-fluid {
   max-width: 100%;
   height: auto;
+  width: auto;
 }
 
 .img-thumbnail {
@@ -10713,11 +10714,10 @@ footer {
 .headerImg{
     text-align: center;
     padding-bottom: 2rem;
-    padding-top: 2rem;
+    padding-top: 1rem;
     border-color: #4242423d !important;
     border-width: 1px !important;
     margin-bottom: 2rem;
-    margin-top:5rem;
 }
 
 .post-time{
@@ -10737,4 +10737,12 @@ img{
 }
 #mainNav .navbar-nav .nav-item .nav-link.active {
   color: #198754;
+}
+
+.img_container {
+  width: 30%;
+}
+.img_container img {
+  max-width: 100%;
+  height: auto;
 }
