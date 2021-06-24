@@ -4663,6 +4663,7 @@ textarea.form-control-lg {
 
 .card-title {
     margin-bottom: 0.5rem;
+    font-weight: bold;
 }
 
 .card-subtitle {
