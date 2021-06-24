@@ -1401,12 +1401,12 @@ progress {
 
     .col-lg-7 {
         flex: 0 0 auto;
-        width: 58.3333333333%;
+        width: 64.3333333333%;
     }
 
     .col-lg-8 {
         flex: 0 0 auto;
-        width: 66.6666666667%;
+        width: 70%;
     }
 
     .col-lg-9 {
@@ -3111,8 +3111,8 @@ textarea.form-control-lg {
 
 .btn-check:focus + .btn-primary, .btn-primary:focus {
     color: #fff;
-    background-color: #0b5ed7;
-    border-color: #0a58ca;
+    background-color: #198754;
+    border-color: #198754;
     box-shadow: 0 0 0 0.25rem rgba(49, 132, 253, 0.5);
 }
 
@@ -4664,6 +4664,7 @@ textarea.form-control-lg {
 
 .card-title {
     margin-bottom: 0.5rem;
+    font-weight: bold;
 }
 
 .card-subtitle {
