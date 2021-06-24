@@ -59,8 +59,8 @@ function loaded() {
                     ul_list = $("#sw-data");
                     ul_list.append(`<div class="row m-2" id="data-group">
                                         <div class="col-md-10 mt-2 mb-2">
-                                            <a href="#" class="text-success text-decoration-none mb-2 fw-bold h4"
-                                            id = "${project_name}">${project_name}</a>
+                                            <h4 class="text-success text-decoration-none mb-3 fw-bold"
+                                            >${project_name}</h4>
                                             <p class="mb-0 small">${members_name}</p>
                                             <div>
                                                 <a class="text-secondary small" href="${url}" target="_blank">${url}</a>
@@ -102,8 +102,8 @@ function loaded() {
                     ul_list = $("#ai-data");
                     ul_list.append(`<div class="row m-2" id="data-group">
                                         <div class="col-md-10 mt-2 mb-2">
-                                            <a href="#" class="text-success text-decoration-none mb-2 fw-bold h4"
-                                            id = "${project_name}">${project_name}</a>
+                                            <h4 class="text-success text-decoration-none mb-3 fw-bold"
+                                            >${project_name}</h4>
                                             <p class="mb-0 small">${members_name}</p>
                                             <div>
                                                 <a class="text-secondary small" href="${url}" target="_blank">${url}</a>
