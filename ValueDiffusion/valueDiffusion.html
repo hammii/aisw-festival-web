@@ -22,12 +22,12 @@
     <link href="../css/styles.css" rel="stylesheet"/>
     <link href="valueDiffusion.css" rel="stylesheet"/>
 </head>
-<body>
+<body onLoad="loaded();">
 <!-- Navigation-->
 <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
     <div class="container px-4 px-sm-0">
         <div class="img_container">
-            <a class="navbar-brand cursor-pointer"><img src="../assets/img/ai_sw_logo.png" alt="..."  id="home"/></a>
+            <a class="navbar-brand cursor-pointer"><img src="../assets/img/ai_sw_logo.png" alt="..." id="home"/></a>
         </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,19 +54,19 @@
         <div class="col-lg-4 mb-3 mb-lg-0">
             <div class="list-group" id="list-tab" role="tablist">
                 <a class="list-group-item list-group-item-action active" id="list-concert-list" data-bs-toggle="list"
-                    href="#list-concert" role="tab" aria-controls="list-concert">SW/AI 콘서트</a>
+                   href="#list-concert" role="tab" aria-controls="list-concert">SW/AI 콘서트</a>
                 <a class="list-group-item list-group-item-action" id="list-volunteer-list" data-bs-toggle="list"
-                    href="#list-volunteer " role="tab" aria-controls="list-volunteer">지역사회 교육봉사</a>
+                   href="#list-volunteer " role="tab" aria-controls="list-volunteer">지역사회 교육봉사</a>
                 <a class="list-group-item list-group-item-action" id="list-contents-list" data-bs-toggle="list"
-                    href="#list-contents" role="tab" aria-controls="list-contents">지역사회 교육 콘텐츠 개발</a>
+                   href="#list-contents" role="tab" aria-controls="list-contents">지역사회 교육 콘텐츠 개발</a>
                 <a class="list-group-item list-group-item-action" id="list-blog-list" data-bs-toggle="list"
-                    href="#list-blog" role="tab" aria-controls="list-blog">블로그를 통한 SW가치 확산</a>
+                   href="#list-blog" role="tab" aria-controls="list-blog">블로그를 통한 SW가치 확산</a>
                 <a class="list-group-item list-group-item-action" id="list-contest-list" data-bs-toggle="list"
-                    href="#list-contest" role="tab" aria-controls="list-contest">SW 경진대회</a>
+                   href="#list-contest" role="tab" aria-controls="list-contest">SW 경진대회</a>
                 <a class="list-group-item list-group-item-action" id="list-training-list" data-bs-toggle="list"
-                    href="#list-training" role="tab" aria-controls="list-training">SW 교육 교사연수</a>
+                   href="#list-training" role="tab" aria-controls="list-training">SW 교육 교사연수</a>
                 <a class="list-group-item list-group-item-action" id="list-cooperation-list" data-bs-toggle="list"
-                    href="#list-cooperation" role="tab" aria-controls="list-cooperation">협력 체제 구축</a>
+                   href="#list-cooperation" role="tab" aria-controls="list-cooperation">협력 체제 구축</a>
             </div>
         </div>
         <div class="col-lg-8">
@@ -94,15 +94,77 @@
                     </div>
                 </div>
                 <div class="tab-pane fade" id="list-volunteer" role="tabpanel" aria-labelledby="list-volunteer-list">
+                    <div class="container">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">지역사회 교육봉사</h5>
+                                <p class="card-text">2020년도 가치확산의 일환으로 School of Computing 전공 필수 교과목과 연계 비대면 교육 확산
+                                    진행</p>
+                                <div class="px-lg-3 px-md-2 px-sm-1">
+                                    <p class="card-text mb-0">∙ “기업과 리더쉽” 교과목과 연계하여, 재학생 주도로 비대면 교육 확산 진행</p>
+                                    <p class="card-text">∙ 인공지능을 위한 소프트웨어 수학 (예, 선형회귀 등), 인공지능 개요 및 활용 사례 등을 SNS (유튜브,
+                                        인스타그램, 블로그 등)를 활용하여
+                                        진행</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="col-12">
+                                <ul class="nav nav-tabs p-5 pb-3" id="pills-tab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active w-100" id="pills-profile-tab"
+                                                data-bs-toggle="pill"
+                                                data-bs-target="#pills-profile" type="button" role="tab"
+                                                aria-controls="pills-profile"
+                                                aria-selected="true">SW 전공
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link w-100" id="pills-contact-tab" data-bs-toggle="pill"
+                                                data-bs-target="#pills-contact" type="button" role="tab"
+                                                aria-controls="pills-contact"
+                                                aria-selected="false">AI 전공
+                                        </button>
+                                    </li>
+                                </ul>
+
+                                <div class="tab-content" id="pills-tabContent">
+                                    <div class="tab-pane fade show active" id="pills-profile" role="tabpanel"
+                                         aria-labelledby="pills-profile-tab">
+                                        <div class="flex-container">
+                                            <div class="card-body">
+                                                <div id="sw-data">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                                         aria-labelledby="pills-contact-tab">
+                                        <div class="flex-container">
+                                            <div class="card-body">
+                                                <div id="ai-data">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="tab-pane fade" id="list-contents" role="tabpanel" aria-labelledby="list-contents-list">
+                <div class="tab-pane fade" id="list-contents" role="tabpanel"
+                     aria-labelledby="list-contents-list">
                     <div class="container">
                         <div class="row">
                             <!-- Blog entries-->
                             <div class="col-lg-8">
                                 <!-- Featured blog post-->
                                 <div class="card mb-4">
-                                    <a href="#!"><img class="card-img-top" src="../assets/img/value_img/photo2.jpg" alt="..." /></a>
+                                    <a href="#!"><img class="card-img-top"
+                                                      src="../assets/img/value_img/photo2.jpg" alt="..."/></a>
                                     <div class="card-body">
                                         <div class="small text-muted"> </div>
                                         <h2 class="card-title pt-2">가천대 특화 지역사회 교육 컨텐츠 개발 </h2>
@@ -123,7 +185,8 @@
                             <div class="col-lg-8">
                                 <!-- Featured blog post-->
                                 <div class="card mb-4">
-                                    <a href="#!"><img class="card-img-top" src="../assets/img/value_img/그림1.png" alt="..." /></a>
+                                    <a href="#!"><img class="card-img-top" src="../assets/img/value_img/그림1.png"
+                                                      alt="..."/></a>
                                     <div class="card-body">
                                         <div class="small text-muted"> </div>
                                         <h2 class="card-title pt-2">"김원의 AI•SW 중심세상" <br> 블로그를 통한 SW 가치 확산 </h2>
@@ -137,14 +200,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="list-contest" role="tabpanel" aria-labelledby="list-contest-list">
+                <div class="tab-pane fade" id="list-contest" role="tabpanel"
+                     aria-labelledby="list-contest-list">
                     <div class="container">
                         <div class="row">
                             <!-- Blog entries-->
                             <div class="col-lg-8">
                                 <!-- Featured blog post-->
                                 <div class="card mb-4">
-                                    <a href="#!"><img class="card-img-top" src="../assets/img/value_img/photo3.jpg" alt="..." /></a>
+                                    <a href="#!"><img class="card-img-top"
+                                                      src="../assets/img/value_img/photo3.jpg" alt="..."/></a>
                                     <div class="card-body">
                                         <div class="small text-muted"> </div>
                                         <h2 class="card-title pt-2">SW 경진 대회 </h2>
@@ -158,14 +223,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="list-training" role="tabpanel" aria-labelledby="list-training-list">
+                <div class="tab-pane fade" id="list-training" role="tabpanel"
+                     aria-labelledby="list-training-list">
                     <div class="container">
                         <div class="row">
                             <!-- Blog entries-->
                             <div class="col-lg-8">
                                 <!-- Featured blog post-->
                                 <div class="card mb-4">
-                                    <a href="#!"><img class="card-img-top" src="../assets/img/value_img/photo4.jpg" alt="..." /></a>
+                                    <a href="#!"><img class="card-img-top"
+                                                      src="../assets/img/value_img/photo4.jpg" alt="..."/></a>
                                     <div class="card-body">
                                         <div class="small text-muted"> </div>
                                         <h2 class="card-title pt-2">초•중등교 SW 교육 교사 연수 </h2>
@@ -179,14 +246,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="list-cooperation" role="tabpanel" aria-labelledby="list-cooperation-list">
+                <div class="tab-pane fade" id="list-cooperation" role="tabpanel"
+                     aria-labelledby="list-cooperation-list">
                     <div class="container">
                         <div class="row">
                             <!-- Blog entries-->
                             <div class="col-lg-8">
                                 <!-- Featured blog post-->
                                 <div class="card mb-4">
-                                    <a href="#!"><img class="card-img-top" src="../assets/img/value_img/photo5.jpg" alt="..." /></a>
+                                    <a href="#!"><img class="card-img-top"
+                                                      src="../assets/img/value_img/photo5.jpg" alt="..."/></a>
                                     <div class="card-body">
                                         <div class="small text-muted"> </div>
                                         <h2 class="card-title pt-2">지자체, 지역 초•중•고등학교, 가천대 유관 조직과 협력 체제 구축 </h2>

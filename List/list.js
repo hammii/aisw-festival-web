@@ -1,6 +1,6 @@
-var triggerTabList = [].slice.call(document.querySelectorAll('#myTab a'));
+const triggerTabList = [].slice.call(document.querySelectorAll('#myTab a'));
 triggerTabList.forEach(function (triggerEl) {
-    var tabTrigger = new bootstrap.Tab(triggerEl)
+    const tabTrigger = new bootstrap.Tab(triggerEl);
 
     triggerEl.addEventListener('click', function (event) {
         event.preventDefault()
@@ -19,7 +19,7 @@ function loaded() {
             const allRow = data;
             let allData = "";
 
-            for (var singleRow = 0; singleRow < allRow.length; singleRow++) {
+            for (let singleRow = 0; singleRow < allRow.length; singleRow++) {
                 allData += allRow[singleRow];
             }
 
@@ -29,10 +29,10 @@ function loaded() {
             let gproject_cnt = 0;
             let cnt;
 
-            for (var num = 0; num < rowArr.length; num++) {
+            for (let num = 0; num < rowArr.length; num++) {
                 textArr[num] = CSVtoArray(rowArr[num]);
 
-                if (textArr[num][0] !== undefined && num > 0) {
+                if (textArr[num][0] !== undefined) {
                     let subject = "";
                     const email = textArr[num][1];
                     const project_name = textArr[num][2];
@@ -86,23 +86,6 @@ function loaded() {
                         default:
                             break;
                     }
-
-                    // ul_list.append(`<div class="row" id="data-group">
-                    //                     <div class="col-md-2 align-self-center">
-                    //                         <button type="button"
-                    //                                 class="btn btn-primary btn-block btn-sm justify-content-center"
-                    //                                 id = "${email}"
-                    //                                 onclick="btnClickHandler(this)">${subject}-${cnt}
-                    //                         </button>
-                    //                     </div>
-                    //                     <div class="col-md-10">
-                    //                         <a href="#" class="text-primary text-decoration-none mb-0"
-                    //                         id = "${email}"
-                    //                         onclick="clickHandler(this)">${project_name}</a>
-                    //                         <p class="mb-0 small">${members_name}</p>
-                    //                     </div>
-                    //                 </div>
-                    //                 <hr/>`)
                 }
             }
         }
