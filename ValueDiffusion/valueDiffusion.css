@@ -11455,3 +11455,10 @@ img{
     color: #198754;
 }
 
+.img_container {
+    width: 30%;
+}
+.img_container img {
+    max-width: 100%;
+    height: auto;
+}
