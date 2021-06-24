@@ -44,15 +44,15 @@ function loaded() {
                             subject = "MOBILE";
                             mobile_cnt += 1;
                             cnt = mobile_cnt;
-                            ul_list.append(`<div class="row" id="data-group">
-                                        <div class="col-md-2 align-self-center">
+                            ul_list.append(`<div class="row m-2" id="data-group">
+                                        <div class="col-md-2  align-self-center">
                                             <button type="button"
                                                     class="btn btn-success btn-block btn-sm justify-content-center"
                                                     id = "${email}"
                                                     onclick="btnClickHandler(this)">${subject}-${cnt}
                                             </button>
                                         </div>
-                                        <div class="col-md-10">
+                                        <div class="col-md-10 mt-2 mb-2">
                                             <a href="#" class="text-success text-decoration-none mb-0"
                                             id = "${email}"
                                             onclick="clickHandler(this)">${project_name}</a>
@@ -66,15 +66,15 @@ function loaded() {
                             subject = "GPROJECT";
                             gproject_cnt += 1;
                             cnt = gproject_cnt;
-                            ul_list.append(`<div class="row" id="data-group">
-                                        <div class="col-md-2 align-self-center">
+                            ul_list.append(`<div class="row m-2" id="data-group">
+                                        <div class="col-md-3 align-self-center">
                                             <button type="button"
                                                     class="btn btn-success btn-block btn-sm justify-content-center"
                                                     id = "${email}"
                                                     onclick="btnClickHandler(this)">${subject}-${cnt}
                                             </button>
                                         </div>
-                                        <div class="col-md-10">
+                                        <div class="col-md-9 mt-2 mb-2">
                                             <a href="#" class="text-success text-decoration-none mb-0"
                                             id = "${email}"
                                             onclick="clickHandler(this)">${project_name}</a>
@@ -141,12 +141,12 @@ $(schedule).click(function () {
     location.href = "../Schedule/schedule.html?type=schedule";
 })
 
-$(opensource).click(function (){
-    location.href="../Opensource/openSource.html?type=opensource";
+$(opensource).click(function () {
+    location.href = "../Opensource/openSource.html?type=opensource";
 })
 
-$(value).click(function (){
-    location.href="../ValueDiffusion/valueDiffusion.html?type=value";
+$(value).click(function () {
+    location.href = "../ValueDiffusion/valueDiffusion.html?type=value";
 })
 
 // project 클릭 리스너
@@ -154,6 +154,7 @@ function clickHandler(ths) {
     const text = $(ths)[0].id;
     location.href = "showDetails.html?email=" + text;
 }
+
 function btnClickHandler(ths) {
     const text = $(ths)[0].id;
     location.href = "showDetails.html?email=" + text;
