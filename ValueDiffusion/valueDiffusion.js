@@ -18,6 +18,10 @@ $(value).click(function () {
     location.href = "../ValueDiffusion/valueDiffusion.html?type=value";
 })
 
+$('.carousel').carousel({
+        interval: 3000
+});
+
 const triggerTabList = [].slice.call(document.querySelectorAll('#myTab a'));
 triggerTabList.forEach(function (triggerEl) {
     const tabTrigger = new bootstrap.Tab(triggerEl);
@@ -139,3 +143,4 @@ function CSVtoArray(text) {
     if (/,\s*$/.test(text)) a.push('');
     return a;
 }
+
