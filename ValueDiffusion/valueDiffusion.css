@@ -1401,12 +1401,12 @@ progress {
 
     .col-lg-7 {
         flex: 0 0 auto;
-        width: 58.3333333333%;
+        width: 64.3333333333%;
     }
 
     .col-lg-8 {
         flex: 0 0 auto;
-        width: 66.6666666667%;
+        width: 70%;
     }
 
     .col-lg-9 {
@@ -3111,8 +3111,8 @@ textarea.form-control-lg {
 
 .btn-check:focus + .btn-primary, .btn-primary:focus {
     color: #fff;
-    background-color: #0b5ed7;
-    border-color: #0a58ca;
+    background-color: #198754;
+    border-color: #198754;
     box-shadow: 0 0 0 0.25rem rgba(49, 132, 253, 0.5);
 }
 
@@ -4226,6 +4226,7 @@ textarea.form-control-lg {
 
 .tab-content > .tab-pane {
     display: none;
+    width: 100%;
 }
 
 .tab-content > .active {
@@ -6510,6 +6511,17 @@ textarea.form-control-lg {
 
 .carousel-dark .carousel-caption {
     color: #000;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
 }
 
 @-webkit-keyframes spinner-border {
@@ -11449,13 +11461,14 @@ textarea.form-control-lg {
     cursor: pointer;
 }
 
-img{
+img {
     margin-bottom: -10px;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link:hover {
     color: #198754;
 }
+
 #mainNav .navbar-nav .nav-item .nav-link.active {
     color: #198754;
 }
@@ -11463,7 +11476,46 @@ img{
 .img_container {
     width: 30%;
 }
+
 .img_container img {
     max-width: 100%;
     height: auto;
+}
+
+.poster {
+    width: 100px !important;
+    font-size: x-small !important;
+    padding: 0 0 !important;
+}
+
+.nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #495057;
+    text-decoration: none;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+@media (prefers-reduced-motion: reduce) {
+    .nav-link {
+        transition: none;
+    }
+}
+.nav-link#pills-profile-tab:hover, .nav-link#pills-profile-tab:focus {
+    color: #000000;
+}
+.nav-link#pills-contact-tab:hover, .nav-link#pills-contact-tab:focus {
+    color: #000000;
+}
+.nav-tabs .nav-link.active#pills-profile-tab, .nav-tabs .show > .nav-link#pills-profile-tab {
+    color: #198754;
+    background-color: #ffffff;
+}
+.nav-tabs .nav-link.active#pills-contact-tab, .nav-tabs .show > .nav-link#pills-contact-tab {
+    color: #198754;
+    background-color: #ffffff;
+}
+.nav-link.disabled {
+    color: #6c757d;
+    pointer-events: none;
+    cursor: default;
 }
