@@ -10,7 +10,7 @@ triggerTabList.forEach(function (triggerEl) {
 
 function loaded() {
     let ul_list; //ul_list선언
-    const fileName = "../assets/sheet (2).csv";
+    const fileName = "../assets/sheet.csv";
 
     $.ajax({
         url: fileName,
